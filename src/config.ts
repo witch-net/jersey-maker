@@ -14,6 +14,6 @@ export async function readConfig(path: string) {
     config.address = config.address ?? '127.0.0.1'
     config.port = config.port ?? 8080
     if ((config.databaseURL ?? '') === '') {
-        throw new Error('No database URI specified')
+        throw new Error('no database URI specified')
     }
 }
